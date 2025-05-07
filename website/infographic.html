@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic</title>
+    <link rel="stylesheet" href="ministry.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="logobottom"><img src="../additionalimages/headershortmid-11.svg" alt=""> </div>
+    <header>
+        <div class="red">
+        <div class="side"></div>
+        <div class="logo">
+            <img src="https://i.postimg.cc/hvRRY5PH/DAM-Designs-Logo.png" alt="D.A.M. logo">
+        </div>
+        <div class="side"></div>
+        </div>
+        <nav>
+            <div id="about">
+                <a href="./about.html">About</a>
+            </div>
+            <div id="prev">
+                <a class="arrow" href="#"><img src="https://i.postimg.cc/c1fr444w/Prev.png" alt="Prev"></a>
+            </div>
+            <div id="projects">
+                <a href="./projects.html">Projects</a>
+            </div>
+            <div id="next">
+                <a class="arrow" href="#"><img src="https://i.postimg.cc/8PHcMKvC/Next.png" alt="Next"></a>
+            </div>
+            <div id="contact">
+                <a href="./contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1>Music Revenue Infographic</h1>
+                <h2>Released 2024 / Infographic Design</h2>
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="slider-container">
+                <button class="slider-button left" id="before">&#9664;</button>
+                <div class="galleryItems" id="galleryItem">
+                    <img src="https://i.ibb.co/67JjnJkS/Music-Revenue-Infographic-01.png" alt="Music-Revenue-Infographic-01">
+                    <img src="https://i.ibb.co/jkVj9yyj/Music-Revenue-Infographic-02.png" alt="Music-Revenue-Infographic-02">
+                    <img src="https://i.ibb.co/twXMc8pj/Music-Revenue-Infographic-03.png" alt="Music-Revenue-Infographic-03">
+                </div>
+                <button class="slider-button right" id="after">&#9654;</button>
+            </div>
+            <script>
+                const slider = document.getElementById('galleryItem');
+                const prevBtn = document.getElementById('before');
+                const nextBtn = document.getElementById('after');
+                const slides = slider.querySelectorAll('img');
+                let currentIndex = 0;
+              
+                function updateSlider() {
+                  const slideWidth = slides[0].clientWidth;
+                  slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+                }
+              
+                prevBtn.addEventListener('click', () => {
+                  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                  updateSlider();
+                });
+              
+                nextBtn.addEventListener('click', () => {
+                  currentIndex = (currentIndex + 1) % slides.length;
+                  updateSlider();
+                });
+              
+                window.addEventListener('resize', updateSlider);
+              </script>
+            
+            <div class="divider"></div>
+            <div class="disc">
+                <div class="mask">
+                    <img src="../additionalimages/mask-01.svg" alt="">
+                </div>
+                <div class="cover">
+                    <img src="https://i.ibb.co/ccKd91QF/Disc-07.png" alt="Disc-07">
+                </div>
+            </div>
+        </section>
+        <section id="project-description">
+            <h2>Description</h2>
+            <div>
+                <p>An infographic on music revenue by genre made to look like the animated equalizer bars. The top reflects revenue through streaming compared to revenue overall, while the bottom reflects the percent of revenue each genre produces.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Disc Selection</h2>
+            <div class="container">
+                <a href="./damore.html"><img src="../a2_martin_content/cases/damorestateone.svg" alt=""></a>
+                <a href="./catch.html"><img src="../a2_martin_content/cases/catch22stateone.svg" alt=""></a>
+                <a href="./lazer.html"><img src="../a2_martin_content/cases/lazerteamstateone.svg" alt=""></a>
+                <a href="./duality.html"><img src="../a2_martin_content/cases/dualitystateone.svg" alt=""></a>
+                <a href="./young.html"><img src="../a2_martin_content/cases/younglifestateone.svg" alt=""></a>
+                <a href="./river.html"><img src="../a2_martin_content/cases/riverstateone.svg" alt=""></a>
+                <a href="./estelle.html"><img src="../a2_martin_content/cases/fofstateone.svg" alt=""></a>
+                <a href="./ministry.html"><img src="../a2_martin_content/cases/mimstateone.svg" alt=""></a>
+                <a href="./expanse.html"><img src="../a2_martin_content/cases/expansestateone.svg" alt=""></a>
+                <a href="./aiga.html"><img src="../a2_martin_content/cases/aigastateone.svg" alt=""></a>
+                <a href="./perfectionist.html"><img src="../a2_martin_content/cases/perfectioniststateone.svg" alt=""></a>
+                <a href="./thomas.html"><img src="../a2_martin_content/cases/thomasstateone.svg" alt=""></a>
+                <a href="./fusion.html"><img src="../a2_martin_content/cases/fusionstateone.svg" alt=""></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

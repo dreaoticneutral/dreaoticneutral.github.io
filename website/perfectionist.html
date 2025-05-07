@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfectionist</title>
+    <link rel="stylesheet" href="ministry.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="logobottom"><img src="../additionalimages/headershortmid-11.svg" alt=""> </div>
+    <header>
+        <div class="red">
+        <div class="side"></div>
+        <div class="logo">
+            <img src="https://i.postimg.cc/hvRRY5PH/DAM-Designs-Logo.png" alt="D.A.M. logo">
+        </div>
+        <div class="side"></div>
+        </div>
+        <nav>
+            <div id="about">
+                <a href="./about.html">About</a>
+            </div>
+            <div id="prev">
+                <a class="arrow" href="#"><img src="https://i.postimg.cc/c1fr444w/Prev.png" alt="Prev"></a>
+            </div>
+            <div id="projects">
+                <a href="./projects.html">Projects</a>
+            </div>
+            <div id="next">
+                <a class="arrow" href="#"><img src="https://i.postimg.cc/8PHcMKvC/Next.png" alt="Next"></a>
+            </div>
+            <div id="contact">
+                <a href="./contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1>Perfectionist</h1>
+                <h2>Released 2022 / Digital Art</h2>
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="slider-container">
+                <button class="slider-button left" id="before">&#9664;</button>
+                <div class="galleryItems" id="galleryItem">
+                    <img src="https://i.ibb.co/fYMYnrXL/Perfectionist-02.png" alt="Perfectionist-02">
+                    <img src="https://i.ibb.co/XZBh2H6C/Perfectionist-04.png" alt="Perfectionist-04">
+                    <img src="https://i.ibb.co/93q7BG8S/Perfectionist-03.png" alt="Perfectionist-03">
+                </div>
+                <button class="slider-button right" id="after">&#9654;</button>
+            </div>
+            <script>
+                const slider = document.getElementById('galleryItem');
+                const prevBtn = document.getElementById('before');
+                const nextBtn = document.getElementById('after');
+                const slides = slider.querySelectorAll('img');
+                let currentIndex = 0;
+              
+                function updateSlider() {
+                  const slideWidth = slides[0].clientWidth;
+                  slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+                }
+              
+                prevBtn.addEventListener('click', () => {
+                  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                  updateSlider();
+                });
+              
+                nextBtn.addEventListener('click', () => {
+                  currentIndex = (currentIndex + 1) % slides.length;
+                  updateSlider();
+                });
+              
+                window.addEventListener('resize', updateSlider);
+              </script>
+            
+            <div class="divider"></div>
+            <div class="disc">
+                <div class="mask">
+                    <img src="../additionalimages/mask-01.svg" alt="">
+                </div>
+                <div class="cover">
+                    <img src="https://i.ibb.co/C3VJNYzJ/Disc-11.png" alt="Disc-11">
+                </div>
+            </div>
+        </section>
+        <section id="project-description">
+            <h2>Description</h2>
+            <div>
+                <p>Can't leave, can't rest, can't stop 'till it's perfect. Coz if it's not perfect then what is it?</p>
+                <p>Inspired by the Will Jay album of the same name, as well as my own struggles with perfectionism, this is an exploration of being so dedicated to your art that you just sit there, stuck, working on it until your piece is “perfect”, as shown by a pianist chained to his instrument until he can get the “perfect” composition. Instead of visual art, I wanted to explore music because I find the movement of musicians visually interesting. Another reason I didn't go with an artist is because while this is technically personal I wanted to distance myself from it so it’s not just about me. Everything but the piano keys and the suit being colored in was a stylistic choice of the rest of the world being, como se dice, washed out in pursuit of one goal, perfection.</p>
+            </div>
+            <p class="magazine">Published in the Spring 2025 Edition of Central Review Magazine</p>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/28dAXnbJ7qnJPhiNxETBlF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </section>
+        <section>
+            <h2>Disc Selection</h2>
+            <div class="container">
+                <a href="./damore.html"><img src="../a2_martin_content/cases/damorestateone.svg" alt=""></a>
+                <a href="./catch.html"><img src="../a2_martin_content/cases/catch22stateone.svg" alt=""></a>
+                <a href="./lazer.html"><img src="../a2_martin_content/cases/lazerteamstateone.svg" alt=""></a>
+                <a href="./duality.html"><img src="../a2_martin_content/cases/dualitystateone.svg" alt=""></a>
+                <a href="./young.html"><img src="../a2_martin_content/cases/younglifestateone.svg" alt=""></a>
+                <a href="./river.html"><img src="../a2_martin_content/cases/riverstateone.svg" alt=""></a>
+                <a href="./estelle.html"><img src="../a2_martin_content/cases/fofstateone.svg" alt=""></a>
+                <a href="./infographic.html"><img src="../a2_martin_content/cases/infographicstateone.svg" alt=""></a>
+                <a href="./ministry.html"><img src="../a2_martin_content/cases/mimstateone.svg" alt=""></a>
+                <a href="./expanse.html"><img src="../a2_martin_content/cases/expansestateone.svg" alt=""></a>
+                <a href="./aiga.html"><img src="../a2_martin_content/cases/aigastateone.svg" alt=""></a>
+                <a href="./thomas.html"><img src="../a2_martin_content/cases/thomasstateone.svg" alt=""></a>
+                <a href="./fusion.html"><img src="../a2_martin_content/cases/fusionstateone.svg" alt=""></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

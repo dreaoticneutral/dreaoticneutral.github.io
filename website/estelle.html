@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Over Function</title>
+    <link rel="stylesheet" href="ministry.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="logobottom"><img src="../additionalimages/headershortmid-11.svg" alt=""> </div>
+    <header>
+        <div class="red">
+        <div class="side"></div>
+        <div class="logo">
+            <img src="https://i.postimg.cc/hvRRY5PH/DAM-Designs-Logo.png" alt="D.A.M. logo">
+        </div>
+        <div class="side"></div>
+        </div>
+        <nav>
+            <div id="about">
+                <a href="./about.html">About</a>
+            </div>
+            <div id="prev">
+                <a class="arrow" href="#"><img src="https://i.postimg.cc/c1fr444w/Prev.png" alt="Prev"></a>
+            </div>
+            <div id="projects">
+                <a href="./projects.html">Projects</a>
+            </div>
+            <div id="next">
+                <a class="arrow" href="#"><img src="https://i.postimg.cc/8PHcMKvC/Next.png" alt="Next"></a>
+            </div>
+            <div id="contact">
+                <a href="./contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1>Estelle: Form Over Function</h1>
+                <h2>Released 2021 / Album Design & Concept Development</h2>
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="slider-container">
+                <button class="slider-button left" id="before">&#9664;</button>
+                <div class="galleryItems" id="galleryItem">
+                    <img src="https://i.ibb.co/60yQNbX3/Form-Over-Function-01.png" alt="Form-Over-Function-01">
+                    <img src="https://i.ibb.co/FqwLN7Qz/Form-Over-Function-02.png" alt="Form-Over-Function-02">
+                    <img src="https://i.ibb.co/TxSp2HBb/Form-Over-Function-03.png" alt="Form-Over-Function-03">
+                    <img src="https://i.ibb.co/LhvfGc3P/Form-Over-Function-04.png" alt="Form-Over-Function-04">
+                    <img src="https://i.ibb.co/ny4CQ8c/Form-Over-Function-05.png" alt="Form-Over-Function-05">
+                    <img src="https://i.ibb.co/d4Rs1XFs/Form-Over-Function-06.png" alt="Form-Over-Function-06">
+                    <img src="https://i.ibb.co/8LbQZTGF/Form-Over-Function-07.png" alt="Form-Over-Function-07">
+                    <img src="https://i.ibb.co/Kpcc8W85/Form-Over-Function-08.png" alt="Form-Over-Function-08">
+                    <img src="https://i.ibb.co/6Rzb3PDR/Form-Over-Function-09.png" alt="Form-Over-Function-09">
+                </div>
+                <button class="slider-button right" id="after">&#9654;</button>
+            </div>
+            <script>
+                const slider = document.getElementById('galleryItem');
+                const prevBtn = document.getElementById('before');
+                const nextBtn = document.getElementById('after');
+                const slides = slider.querySelectorAll('img');
+                let currentIndex = 0;
+              
+                function updateSlider() {
+                  const slideWidth = slides[0].clientWidth;
+                  slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+                }
+              
+                prevBtn.addEventListener('click', () => {
+                  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                  updateSlider();
+                });
+              
+                nextBtn.addEventListener('click', () => {
+                  currentIndex = (currentIndex + 1) % slides.length;
+                  updateSlider();
+                });
+              
+                window.addEventListener('resize', updateSlider);
+              </script>
+            
+            <div class="divider"></div>
+            <div class="disc">
+                <div class="mask">
+                    <img src="../additionalimages/mask-01.svg" alt="">
+                </div>
+                <div class="cover">
+                    <img src="https://i.ibb.co/4nqvYrnn/Disc-12.png" alt="Disc-12">
+                </div>
+            </div>
+        </section>
+        <section id="project-description">
+            <h2>Description</h2>
+            <div>
+                <p>Introducing Form Over Function, the most fully actualized album you're never gonna hear.</p>
+                <p>The task was to make a series of branding/marketing pieces for an artist or brand we liked. I, quite clearly, chose Estelle. From The 18th Day to Lover's Rock I've listened to every album she's put out. At least that I know of. At the time she hadn't dropped an album in well over 18 months, so I decided I'd design one on her behalf.</p>
+                <p>Anyone who's ever heard of Estelle knows she's all about spreading love and good vibes. So after a lot of contemplating I decided to make the premise of this theoretical album the idea of loving someone for who they are (their form) instead of what they can do for you (their function).</p>
+                <p>In tandem with the album I designed five pieces of promotional material. I decided to base it on a blend of western physical music media and inclusions that often come with physical K-Pop albums. I ended up creating a cd with a jewel case, a premium limited edition record, a poster, a sweatshirt, and sticker sheet. I was running out of ideas near the end.</p>
+                <p>The first thing I did was not the album art but the occasional logo redesign Estelle does every few years. After that I had to choose how I wanted the cover to look, which was not as easy as I thought it would be. After I designed the art everything else went fairly smoothly all things considered. That said...</p>
+                <p>I had completely misunderstood the assignment. I had essentially created an album from scratch when all I had to make promotional material. You know, tour posters or hoodies or something. So yea. Love that for me.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Disc Selection</h2>
+            <div class="container">
+                <a href="./damore.html"><img src="../a2_martin_content/cases/damorestateone.svg" alt=""></a>
+                <a href="./catch.html"><img src="../a2_martin_content/cases/catch22stateone.svg" alt=""></a>
+                <a href="./lazer.html"><img src="../a2_martin_content/cases/lazerteamstateone.svg" alt=""></a>
+                <a href="./duality.html"><img src="../a2_martin_content/cases/dualitystateone.svg" alt=""></a>
+                <a href="./young.html"><img src="../a2_martin_content/cases/younglifestateone.svg" alt=""></a>
+                <a href="./river.html"><img src="../a2_martin_content/cases/RiverStateOne.svg" alt=""></a>
+                <a href="./infographic.html"><img src="../a2_martin_content/cases/infographicstateone.svg" alt=""></a>
+                <a href="./ministry.html"><img src="../a2_martin_content/cases/mimstateone.svg" alt=""></a>
+                <a href="./expanse.html"><img src="../a2_martin_content/cases/expansestateone.svg" alt=""></a>
+                <a href="./aiga.html"><img src="../a2_martin_content/cases/aigastateone.svg" alt=""></a>
+                <a href="./perfectionist.html"><img src="../a2_martin_content/cases/perfectioniststateone.svg" alt=""></a>
+                <a href="./thomas.html"><img src="../a2_martin_content/cases/thomasstateone.svg" alt=""></a>
+                <a href="./fusion.html"><img src="../a2_martin_content/cases/fusionstateone.svg" alt=""></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

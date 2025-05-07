@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Life</title>
+    <link rel="stylesheet" href="ministry.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="logobottom"><img src="../additionalimages/headershortmid-11.svg" alt=""> </div>
+    <header>
+        <div class="red">
+        <div class="side"></div>
+        <div class="logo">
+            <img src="https://i.postimg.cc/hvRRY5PH/DAM-Designs-Logo.png" alt="D.A.M. logo">
+        </div>
+        <div class="side"></div>
+        </div>
+        <nav>
+            <div id="about">
+                <a href="./about.html">About</a>
+            </div>
+            <div id="prev">
+                <a class="arrow" href="#"><img src="https://i.postimg.cc/c1fr444w/Prev.png" alt="Prev"></a>
+            </div>
+            <div id="projects">
+                <a href="./projects.html">Projects</a>
+            </div>
+            <div id="next">
+                <a class="arrow" href="#"><img src="https://i.postimg.cc/8PHcMKvC/Next.png" alt="Next"></a>
+            </div>
+            <div id="contact">
+                <a href="./contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1>Young Life</h1>
+                <h2>Released 2020 / Logo & Branding</h2>
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="slider-container">
+                <button class="slider-button left" id="before">&#9664;</button>
+                <div class="galleryItems" id="galleryItem">
+                    <img src="https://i.ibb.co/Ty5RXBp/Young-Life-01.png" alt="Young-Life-01">
+                    <img src="https://i.ibb.co/MHqLVpS/Young-Life-02.png" alt="Young-Life-02">
+                    <img src="https://i.ibb.co/fVqRwyNv/Young-Life-03.png" alt="Young-Life-03">
+                    <img src="https://i.ibb.co/JwNTk9P3/Young-Life-04.png" alt="Young-Life-04">
+                    <img src="https://i.ibb.co/CKkygFhN/Young-Life-05.png" alt="Young-Life-05">
+                    <img src="https://i.ibb.co/r2VWywTV/Young-Life-06.png" alt="Young-Life-06">
+                    <img src="https://i.ibb.co/DSFN9VY/Young-Life-07.png" alt="Young-Life-07">                    <img src="https://placehold.co/1410.png" alt="">
+                    <img src="https://i.ibb.co/jvZRjqS8/Young-Life-08.png" alt="Young-Life-08">
+                </div>
+                <button class="slider-button right" id="after">&#9654;</button>
+            </div>
+            <script>
+                const slider = document.getElementById('galleryItem');
+                const prevBtn = document.getElementById('before');
+                const nextBtn = document.getElementById('after');
+                const slides = slider.querySelectorAll('img');
+                let currentIndex = 0;
+              
+                function updateSlider() {
+                  const slideWidth = slides[0].clientWidth;
+                  slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+                }
+              
+                prevBtn.addEventListener('click', () => {
+                  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                  updateSlider();
+                });
+              
+                nextBtn.addEventListener('click', () => {
+                  currentIndex = (currentIndex + 1) % slides.length;
+                  updateSlider();
+                });
+              
+                window.addEventListener('resize', updateSlider);
+              </script>
+            
+            <div class="divider"></div>
+            <div class="disc">
+                <div class="mask">
+                    <img src="../additionalimages/mask-01.svg" alt="">
+                </div>
+                <div class="cover">
+                    <img src="https://i.ibb.co/hJtz1sf3/Disc-15.png" alt="Disc-15">
+                </div>
+            </div>
+        </section>
+        <section id="project-description">
+            <h2>Description</h2>
+            <div>
+                <p>This is the logo I designed for our youth ministry at Life Church International. Ministry being a bit of a loose term as there are only like, four of them. Honestly it's more of a youth group or maybe a squad or team, but I digress.</p>
+                <p>There are two main ideas I'm playing with here, both of them involving the Y. Firstly, the Y being a person symbolizing that the people, however few of them there may be, are what makes the ministry. Secondly, the Earth being in the... Is that a hand or is the whole thing an arm? It doesn't matter, either one works I guess. Anyway, it symbolizes that the future of the world is in the hands of the youth. For better or worse, hopefully for better.</p>
+                <p>The logo was printed on shirts for what I presume was Youth Sunday. But since I wasn't actually there, I don't really know</p>
+            </div>
+        </section>
+        <section>
+            <h2>Disc Selection</h2>
+            <div class="container">
+                <a href="./damore.html"><img src="../a2_martin_content/cases/damorestateone.svg" alt=""></a>
+                <a href="./catch.html"><img src="../a2_martin_content/cases/catch22stateone.svg" alt=""></a>
+                <a href="./lazer.html"><img src="../a2_martin_content/cases/lazerteamstateone.svg" alt=""></a>
+                <a href="./duality.html"><img src="../a2_martin_content/cases/dualitystateone.svg" alt=""></a>
+                <a href="./river.html"><img src="../a2_martin_content/cases/riverstateone.svg" alt=""></a>
+                <a href="./estelle.html"><img src="../a2_martin_content/cases/fofstateone.svg" alt=""></a>
+                <a href="./infographic.html"><img src="../a2_martin_content/cases/infographicstateone.svg" alt=""></a>
+                <a href="./ministry.html"><img src="../a2_martin_content/cases/mimstateone.svg" alt=""></a>
+                <a href="./expanse.html"><img src="../a2_martin_content/cases/expansestateone.svg" alt=""></a>
+                <a href="./aiga.html"><img src="../a2_martin_content/cases/aigastateone.svg" alt=""></a>
+                <a href="./perfectionist.html"><img src="../a2_martin_content/cases/perfectioniststateone.svg" alt=""></a>
+                <a href="./thomas.html"><img src="../a2_martin_content/cases/thomasstateone.svg" alt=""></a>
+                <a href="./fusion.html"><img src="../a2_martin_content/cases/fusionstateone.svg" alt=""></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
