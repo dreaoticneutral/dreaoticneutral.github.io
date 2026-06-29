@@ -134,10 +134,13 @@ nav > div{
     height: 100%; 
     object-fit: cover;
 } 
+#resume{
+    width: 80vw;
+}
 main{
     padding: 3%;
 }
-h1, h2, h3{
+h1, h3{
     text-align: center;
     font-family: "Overlock", sans-serif;
     font-weight: 700;
@@ -146,10 +149,19 @@ h1{
     font-size: 2rem;
 }
 h2{
-    font-size: 1.5rem;
+    font-size: 1.45rem;
+    text-align: center;
+    font-family: "Overlock", sans-serif;
+    font-weight: 500;
 }
 h3{
     font-size: 1.25rem;
+}
+h4{
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.125rem;
+        font-weight: 400;
 }
 #gallery, #gallery2{
     display: flex;
@@ -160,8 +172,8 @@ h3{
     
 }
 p{
-    font-family: "Overlock", sans-serif;
-    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
 }
 .slider-container{
     display: flex;
