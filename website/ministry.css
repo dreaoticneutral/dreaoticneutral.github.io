@@ -52,8 +52,8 @@ body#home{
     align-self: flex-end;
 }
 .logo > a > img{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 .logo,.side{
     display: flex;
@@ -379,6 +379,7 @@ button{
 }
 .case{
     width: 100%;
+    height: 150px;
     aspect-ratio: 1.15/1;
     background-size: contain;
     background-repeat: no-repeat;
@@ -388,6 +389,7 @@ button{
 .link{
     text-align: center;
     font-family: "Overlock", sans-serif;
+    width: 150px;
 }
 .link p{
     font-size: .9rem;
@@ -605,7 +607,10 @@ button{
         aspect-ratio: 1.49/1;
     }
     .case{
-        height: 200px;
+        height: 250px;
+    }
+    .link{
+        width: 250px;
     }
     .link p{
         font-size: 1.25rem;
@@ -678,8 +683,11 @@ button{
     #discs{
         top: 40px;
     }
+    .link{
+        width: 400px;
+    }
     .case{
-        height: 250px;
+        height: 400px;
     }
     .link p{
         font-size: 1.5rem;
