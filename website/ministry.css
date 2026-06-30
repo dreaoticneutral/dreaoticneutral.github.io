@@ -50,9 +50,6 @@ body#home{
 .logo a{
     height: 60%;
     align-self: flex-end;
-    background-image: url(https://i.postimg.cc/hvRRY5PH/DAM-Designs-Logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .logo > a > img{
     width: 100%;
@@ -180,7 +177,7 @@ p{
 }
 #textbox{
    font-size: 1.5rem;
-    width: 30vw;
+    width: 100%;
     white-space: normal;
     overflow-wrap: break-word;
 }
