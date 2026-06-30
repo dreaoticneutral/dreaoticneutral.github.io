@@ -50,9 +50,12 @@ body#home{
 .logo a{
     height: 60%;
     align-self: flex-end;
+    background-image: url(https://i.postimg.cc/hvRRY5PH/DAM-Designs-Logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .logo > a > img{
-    width: auto;
+    width: 100%;
     height: auto;
 }
 .logo,.side{
@@ -373,12 +376,12 @@ button{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 5vw;
 }
 .case{
-    height: 150px;
+    width: 100%;
     aspect-ratio: 1.15/1;
     background-size: contain;
     background-repeat: no-repeat;
