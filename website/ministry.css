@@ -51,6 +51,10 @@ body#home{
     height: 60%;
     align-self: flex-end;
 }
+.logo > a > img{
+    width: auto;
+    height: auto;
+}
 .logo,.side{
     display: flex;
 }
@@ -171,9 +175,15 @@ p{
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
 }
+#textbox{
+   font-size: 1.5rem;
+    width: 30vw;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
 #page{
     font-family: "Overlock", sans-serif;
-    font-size: 1.75rem
+    font-size: 1.75rem;
 }
 .slider-container{
     display: flex;
