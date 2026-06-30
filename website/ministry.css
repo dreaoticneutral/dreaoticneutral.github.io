@@ -137,6 +137,9 @@ nav > div{
 #resume{
     width: 80vw;
 }
+iframe{
+    width: 100%;
+}
 main{
     padding: 3%;
 }
