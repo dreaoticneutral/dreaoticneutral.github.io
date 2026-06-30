@@ -46,12 +46,8 @@ body#home{
     text-align: center;
     z-index: -1;
 
-
-
-
-
 }
-.logo > img{
+.logo a{
     height: 60%;
     align-self: flex-end;
 }
